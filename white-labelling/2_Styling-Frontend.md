@@ -4,7 +4,7 @@ Theming this service requires you to be able to visualise the changes that you m
 
 - Read our documentation on [setting up a development environment]()
 - [Create an `.env.local` ](#create-an-env-file)file in the root of your local repository to store the `env variables` that you will need to connect to other aspects of this service.
-- Install the packages required to start your local development environment
+- [Install the packages](#install-the-packages-and-start-the-service) required to start your local development environment
 
 ### Create an env file
 - Create a new file in the root of your local project and name it `.env.local`. 
@@ -20,6 +20,13 @@ OAUTH_ISSUER=https://example.amazoncognito.com
 OAUTH_CLIENT_ID=issued_by_your_auth_service
 OAUTH_CLIENT_SECRET=issued_by_your_auth_service
 ```
+### Install the packages and start the service
+From your command line prompt:
+
+- Make sure that you are in the root of your project if not run `cd ~/my_local_project_directory`
+- Run `yarn` or `npm install`
+- Once the package installation has completed run `yarn dev` or `npm start`
+- A local instance of the service should now be available in your browser window at http://localhost:3000
 ## Theme configuration
 There are five options to brand the front end of this service for use with your own platform or website.
 1. [Images](#images) - .webp, .jpg, .svg (recommended), .png files accepted.
@@ -28,7 +35,7 @@ There are five options to brand the front end of this service for use with your 
 4. [Menus](#menus) - header and footer menus are editable via a single configuration file.
 5. [Site metadata](#metadata) can be adapted to include your brand or service name.
 
-## Theme directory
+### Theme directory
 All theme configuration is stored in one directory and spans three files and one directory. Examples of each file and its formatting can be found in the `public/examples` directory.
 ```md
 public/theme
