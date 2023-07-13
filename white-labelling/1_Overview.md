@@ -43,9 +43,19 @@ For a more detailed explination and overview [see the architecture documentation
 
 # Approach to different sized partners with differing levels of technical maturity
 
-From conversations with CID staff and potential partners themselves, it's apparent that the audience covers a range of technical abilitieand industries, at differing levels of maturity. To that end, we've developed the solution with four levels of ability in mind:
+Potential partner organisations that are likely to integrate with the service, covers a range of technical abilities and industries, at differing levels of maturity. With this in mind we have identified 4 different partner personas:
 
-* **Small partners with limited availability of technical maturity** - Will want to avoid technical involvement and will be content with aesthetic customisation options.
+## 1. **Small partners with limited technical maturity** 
+
+**Characteristics:**
+* It is likely want to avoid technical involvement and will be content with aesthetic customisation options.
+* They will likely want to host the full solution themselves as is. 
+
+**Modes of integration**
+
+* **Direct Link** 
+* **[Fork](//TODO: Get URL)** the current compassion in dying repository as is and Host the fork in their own account by creating the appropriate github environments and secrets [see Hosting for details](#hosting)
+* 
 
 * **Intermediate partners with some available technical maturity** - Want more control over the journey than small partners, but don't want to get involved with data storage.
 

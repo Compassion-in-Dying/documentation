@@ -1,6 +1,8 @@
-# Hosting the API
+# Hosting
 
-## Using the API
+## Hosting the service in an AWS account 
+
+## 
 
 ### PDF field mapping
 
