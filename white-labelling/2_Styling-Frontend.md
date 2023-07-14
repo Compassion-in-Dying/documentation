@@ -36,7 +36,7 @@ There are five options to brand the front end of this service for use with your 
 5. [Site metadata](#metadata) can be adapted to include your brand or service name.
 
 ### Theme directory
-All theme configuration is stored in one directory and spans three files and one directory. Examples of each file and its formatting can be found in the `public/examples` directory.
+All theme configuration is stored in one directory and spans three files and one directory. Examples of each file and its formatting can be found in the `public/theme` directory and can be used as a starting point for your service.
 ```md
 public/theme
 ├── font.config.js
@@ -51,43 +51,83 @@ public/theme
 
 ```
 ### Images
+#### Logo
+- File type - .svg (recommended), .jpg, .png, .webp
+- Size - max-height 70px, max-width 300px
+- Location - `public/theme/images`
+- Settings location`public/theme/theme.config.js`.
+- width and height - numeric value only e.g. `140` not ~~140px~~
+- Image src - relative file path e.g. `/theme/images/logo.svg`
+- Alt text - essential for accessibility
+
+**Example configuration**
+```js
+logo: {
+        src: "/theme/images/logo.svg",
+        height: 70,
+        width: 140,
+        alt: "Compassion in dying logo."
+    }
+```
 
 ### Fonts
 
 ### Colours
 ```scss
-/*FORMS*/
-$govuk-error-colour: #d91c90;
-$govuk-success-colour:#69a853;
-$govuk-input-border-colour: $govuk-text-colour;
+/*FONTS*/
+$govuk-font-family: var(--font-geograph);
+$govuk-font-family-headings: var(--font-geograph);
 
-$govuk-summary-title-colour: #006ea1;
-$govuk-border-colour: #fbad18;
+/*COLOURS*/
+$govuk-brand-colour: $cid-dark-green;
+$govuk-canvas-background-colour: #f3f2f1;
+$govuk-body-background-colour: #FFFFFF;
+$govuk-text-colour: #0b0c0c;
+$govuk-secondary-text-colour: #505a5f;
+$govuk-border-colour: $cid-dark-green;
 
-$govuk-inset-text-border-colour: #fbad18;
-$govuk-notification-banner-border: $govuk-brand-colour;
 /*LINKS*/
-$govuk-link-colour: #006ea1;
-$govuk-hover-colour: #141760;
-$govuk-link-visited-colour: #141760;
-$govuk-link-hover-colour: #141760;
-$govuk-link-active-colour: #141760;
+$govuk-link-colour: $cid-dark-green;
+$govuk-hover-colour: black;
+$govuk-link-visited-colour: $cid-dark-green;
+$govuk-link-hover-colour: black;
+$govuk-link-active-colour: $cid-mid-green;
 
 /*BUTTONS*/
-$govuk-button-background-colour: #007ab2;
+$govuk-button-background-colour: $cid-mid-green;
 $govuk-button-text-colour: white;
 
 /*HEADER*/
-$govuk-header-background:  white;
-$govuk-header-text-colour: #141760;
-$govuk-header-nav-item-border-color: #141760;
+$govuk-header-background:  $cid-dark-green;
+$govuk-header-text-colour: white;
+$govuk-header-link-active: $cid-bright-green;
+$govuk-header-nav-item-border-color: $cid-bright-green;
+$govuk-header-border-color: white;
+$govuk-header-border-width: 0px;
 
-$govuk-header-border-color: #d91c90;
-$govuk-header-border-width: 3px;
-$govuk-header-link-active: #1d8feb;
-$govuk-header-link-hover: black;
-$govuk-header-nav-item-border-color: #2e3133;
-$govuk-header-link-underline-thickness: 3px;
+/*FOCUS STATE*/
+$govuk-focus-text-colour: black;
+$govuk-focus-colour: #fd0;
+
+/*FORMS*/
+$govuk-error-colour: #d4351c;
+$govuk-success-colour: $cid-mid-green;
+$govuk-input-border-colour: $govuk-text-colour;
+
+/*MISC*/
+$govuk-details-summary-title-colour: $cid-mid-green;
+
+/*BANNERS and CALLOUTS*/
+$govuk-inset-text-border-colour: $cid-bright-green;
+$govuk-warning-callout-colour: #FF611A;
+$govuk-notification-banner-border: $govuk-brand-colour;
+
+/*DASHBOARD*/
+$govuk-summary-card-title-background: $govuk-canvas-background-colour;
+$govuk-tag-green: #00703c;
+$govuk-tag-yellow: #ffdd00;
+$govuk-tag-grey: #505a5f;
+$govuk-tag-blue: #1d70b8;
 ```
 ### Menus
 
