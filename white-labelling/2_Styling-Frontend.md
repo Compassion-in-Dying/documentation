@@ -79,29 +79,29 @@ $govuk-font-family: var(--font-geograph);
 $govuk-font-family-headings: var(--font-geograph);
 
 /*COLOURS*/
-$govuk-brand-colour: $cid-dark-green;
+$govuk-brand-colour: #00403a;
 $govuk-canvas-background-colour: #f3f2f1;
 $govuk-body-background-colour: #FFFFFF;
 $govuk-text-colour: #0b0c0c;
 $govuk-secondary-text-colour: #505a5f;
-$govuk-border-colour: $cid-dark-green;
+$govuk-border-colour: #00403a;
 
 /*LINKS*/
-$govuk-link-colour: $cid-dark-green;
+$govuk-link-colour: #00403a;
 $govuk-hover-colour: black;
-$govuk-link-visited-colour: $cid-dark-green;
+$govuk-link-visited-colour: #00403a;
 $govuk-link-hover-colour: black;
-$govuk-link-active-colour: $cid-mid-green;
+$govuk-link-active-colour: #32723c;
 
 /*BUTTONS*/
-$govuk-button-background-colour: $cid-mid-green;
+$govuk-button-background-colour: #32723c;
 $govuk-button-text-colour: white;
 
 /*HEADER*/
-$govuk-header-background:  $cid-dark-green;
+$govuk-header-background:  #00403a;
 $govuk-header-text-colour: white;
-$govuk-header-link-active: $cid-bright-green;
-$govuk-header-nav-item-border-color: $cid-bright-green;
+$govuk-header-link-active: #71d76d;
+$govuk-header-nav-item-border-color: #71d76d;
 $govuk-header-border-color: white;
 $govuk-header-border-width: 0px;
 
@@ -111,14 +111,14 @@ $govuk-focus-colour: #fd0;
 
 /*FORMS*/
 $govuk-error-colour: #d4351c;
-$govuk-success-colour: $cid-mid-green;
+$govuk-success-colour: #32723c;
 $govuk-input-border-colour: $govuk-text-colour;
 
 /*MISC*/
-$govuk-details-summary-title-colour: $cid-mid-green;
+$govuk-details-summary-title-colour: #32723c;
 
 /*BANNERS and CALLOUTS*/
-$govuk-inset-text-border-colour: $cid-bright-green;
+$govuk-inset-text-border-colour: #71d76d;
 $govuk-warning-callout-colour: #FF611A;
 $govuk-notification-banner-border: $govuk-brand-colour;
 
