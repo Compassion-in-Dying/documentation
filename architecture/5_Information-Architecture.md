@@ -81,25 +81,25 @@ The following tables list the expected types of attibutes and their respective t
 
 | Property Name | Type | Additional Detail |
 |:--------------|:-----|:------------------|
-| IncludeDementia | Boolean | |
-| IncludeBrainInjury | Boolean | |
-| IncludeNervousSystem | Boolean | |
-| IncludeTerminalIllness | Boolean | |
-| CustomRefusalOfTreatment | String (optional) | |
-| ConfirmationOfStatement | Boolean | |
-| IncludePainRelief | Boolean | |
-| ReasonForMakingAD | String  | |
+| IncludeDementia | Boolean | Controls whether the dementia statement is included in the generated PDF |
+| IncludeBrainInjury | Boolean | Controls whether the brain injury statement is included in the generated PDF |
+| IncludeNervousSystem | Boolean | Controls whether the nervous system statement is included in the generated PDF |
+| IncludeTerminalIllness | Boolean | Controls whether the terminal illness statement is included in the generated PDF |
+| CustomRefusalOfTreatment | String (optional) | If filled in the PDF will contain a custom refusal of treatment |
+| ConfirmationOfStatement | Boolean | Controls whether the confirmation statement is included in the generated PDF |
+| IncludePainRelief | Boolean | Controls whether the pain relief statement is included in the generated PDF |
+| ReasonForMakingAD | String  | The reason for making the advance decision |
 
 ### Advance statement document model
 
 | Property Name | Type | Additional Detail |
 |:--------------|:-----|:------------------|
-| ImportantInYourLife | String (optional) | |
-| ImportantToIdentity | String (optional) | |
-| DislikedThings | String (optional) | |
-| ImportantToKnow | String (optional) | |
-| FoodNeeds | String (optional) | |
-| WhereCaredFor | String (optional) | |
-| ExistingConditions | String (optional) | |
-| OtherImportantHealthIssues | String (optional) | |
-| PreferNotToHappen | String (optional) | | 
+| ImportantInYourLife | String (optional) | An optional description of the things that are important in your life to be included in the PDF |
+| ImportantToIdentity | String (optional) | An optional description of the things that are important in your identity to be included in the PDF |
+| DislikedThings | String (optional) | An optional description of the disliked things to be included in the PDF |
+| ImportantToKnow | String (optional) | An optional description of the things that are important to know about the person to be included in the PDF |
+| FoodNeeds | String (optional) |  An optional description of the dietary requirements to be included in the PDF  |
+| WhereCaredFor | String (optional) |  An optional description of the desire to be cared for at a particular location or type of location, to be included in the PDF  |
+| ExistingConditions | String (optional) |  An optional description of any pre-exisiting conditions to be included in the PDF  |
+| OtherImportantHealthIssues | String (optional) |  An optional description of any other health issues to be included in the PDF  |
+| PreferNotToHappen | String (optional) |  An optional description of the things that you would prefer not to happen to be included in the PDF  | 

@@ -27,13 +27,13 @@ The current hosted solution, runs on AWS (Amazon Web Services) and is made up of
 
 - **[Front End](https://www.github.com/Compassion-in-Dying/choices_frontend)** - This is the frontend of the service, it defines the user journey, forms and styling. The API is agnositic the order the data is recieved in. So the front-end has complete control over this
 
-### Ancillary elements
+### Ancillary elements
 
 - **[Email Task](https://www.github.com/Compassion-in-Dying/email_task)** - This is a task that can be run on a periodic basis that queries the database for accounts that are are the correct points in the workflow to recieve an e-mail.
 
 - **[Account Cleanup task](https://www.github.com/Compassion-in-Dying/account_deletion_task)** - This is a task that can be run on a periodic basis that queries the database for accounts that are are considered unused and cleans them up.
 
-### Support elements
+### Support elements
 
 - **[Admin API](https://www.github.com/Compassion-in-Dying/admin_portal_api)** - An API that supports the admin portal executing various tasks that are required to support the service.
 
@@ -43,35 +43,54 @@ For a more detailed explination and overview [see the architecture documentation
 
 # Approach to different sized partners with differing levels of technical maturity
 
-Potential partner organisations that are likely to integrate with the service, covers a range of technical abilities and industries, at differing levels of maturity. With this in mind we have identified 4 different partner personas:
+Potential partner organisations that are likely to integrate with the service, covers a range of technical abilities and industries, at differing levels of maturity. With this in mind we have identified 3 different partner personas:
 
-## 1. **Small partners with limited technical maturity** 
+
+### 1. **Small partners with limited technical maturity** 
+
+Typically want to provide a mildy customised service for advance decisions and advance statements.
 
 **Characteristics:**
 * It is likely want to avoid technical involvement and will be content with aesthetic customisation options.
-* They will likely want to host the full solution themselves as is. 
+* They will likely not want to host the full solution but may be able to host the front-end code. 
 
-**Modes of integration**
 
-* **Direct Link** 
-* **[Fork](//TODO: Get URL)** the current compassion in dying repository as is and Host the fork in their own account by creating the appropriate github environments and secrets [see Hosting for details](#hosting)
-* 
+### 2. **Intermediate partners with some available technical maturity** 
 
-* **Intermediate partners with some available technical maturity** - Want more control over the journey than small partners, but don't want to get involved with data storage.
+Want more control over the journey than small partners, for example, utilising their own e-mail templates or authentication provider.
 
-* ***Large partners with a high level of available technical maturity** - Want full control, and are willing to write the question pages themselves and post the answers to the documen production service in the format we require.
+**Characteristics:**
+* It is likely want to have some control of the technical aspects
+* They will likely want to host (some / all) components of the solution with some customisation.
 
-* **Partners with a high level of available technical maturiy and bespoke requirements** - Want some of the functionality above, but in a bespoke configuration that only they are likely to ever need. In this case there is the option to allow a third party access to the Compassion in Dying code repository, to allow them to take the elements they need and compile their own solution.
+### 3. **Large partners with a high level of available technical maturity**
+
+Want some of the functionality above, but in a bespoke configuration that only they are likely to ever need. In this case there is the option to allow a third party access to the Compassion in Dying code repository, to allow them to take the elements they need and compile their own solution.
+
+**Characteritics**
+* Full control over the solution, hosting deployment and monitoring
+* Will likely write their own front-end in a technology of their choosing and re-use some of the components,
+
+## Modes of integration
+
+| Type of integration | Description | Difficulty |
+|:----------------|:------------|:-----------|
+| **Direct link** | Utilises the currently hosted website, and clients simply signpost to the service | Easy |
+| **[Hosting the front end code](https://github.com/Compassion-in-Dying/documentation/blob/main/white-labelling/3_Hosting.md#frontend)** | Allows the client to host the front-end code (their infrastructure and customise the style). This solution would still utilise the backend (API, Authentication and Database) hosted by compassion in dying. | Medium |   
+| **[Hosting the full solution](https://github.com/Compassion-in-Dying/documentation/blob/main/white-labelling/3_Hosting.md)** | Hosting the full solution with only customisations in the front-end and re-using the API, E-Mail and Database. | Medium |
+| **[Hosting selected components](https://github.com/Compassion-in-Dying/documentation/blob/main/white-labelling/3_Hosting.md)** | The client can pick and choose the components that they wish to host, to best align with their infrastructure | High |
+
 
 ## Technical approach
 
 We have taken a layered approach that allows different sized partners to choose which layers to use depending on their desired solution and
 technical capabilities. There are 3 layers:
 
-1.  [Service Layer](https://www.github.com/Compassion-in-Dying/choices_api) - A simple API that save user responses and generates the documents, this layer encompasses the database and PDF generation.
+1.  [API / Database](https://www.github.com/Compassion-in-Dying/choices_api) - A simple API that save user responses and generates the documents, this layer encompasses the database and PDF generation.
 
 2.  [Authentication](https://www.github.com/Compassion-in-Dying/auth_api) - An authentication layer that abstracts the details of the authentication flows from the front-end, primarily due to the credentials login requirement for the hsoted CID service. If it is the case that the partner wishes to use their own authentication pattern or a default OIDC / OAuth2 federated identity service such as Facebook, Google, Auth0, Ping etc. Then this layer is not necessary. However a different provider setting will be required. For more information on this see the dedicated Authentication section. 
 
 3.  [User interface](https://www.github.com/Compassion-in-Dying/choices_frontend) - The front end that the users interact with.
 
 
+![Architectural Layers](./images/Architecture-Layers.png)
