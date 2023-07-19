@@ -73,13 +73,17 @@ Want some of the functionality above, but in a bespoke configuration that only t
 
 ## Modes of integration
 
+We have identified the above candidates for integration, the table below sets out *some* of the ways a client may choose to integrate. The amount of options and ways this could actually materialise are too numerous to list exhustively but the most common methods are likely to be as follows:
+
 | Type of integration | Description | Difficulty |
 |:----------------|:------------|:-----------|
 | **Direct link** | Utilises the currently hosted website, and clients simply signpost to the service | Easy |
-| **[Hosting the front end code](https://github.com/Compassion-in-Dying/documentation/blob/main/white-labelling/3_Hosting.md#frontend)** | Allows the client to host the front-end code (their infrastructure and customise the style). This solution would still utilise the backend (API, Authentication and Database) hosted by compassion in dying. | Medium |   
+| **[Hosting the front end code](https://github.com/Compassion-in-Dying/documentation/blob/main/white-labelling/3_Hosting.md)** | Allows the client to host the front-end code (their infrastructure and customise the style). This solution would still utilise the backend (API, Authentication and Database) hosted by compassion in dying. | Medium |   
 | **[Hosting the full solution](https://github.com/Compassion-in-Dying/documentation/blob/main/white-labelling/3_Hosting.md)** | Hosting the full solution with only customisations in the front-end and re-using the API, E-Mail and Database. | Medium |
-| **[Hosting selected components](https://github.com/Compassion-in-Dying/documentation/blob/main/white-labelling/3_Hosting.md)** | The client can pick and choose the components that they wish to host, to best align with their infrastructure | High |
+| **[Hosting selected components](https://github.com/Compassion-in-Dying/documentation/blob/main/white-labelling/3_Hosting.md)** | The client can pick and choose the components that they wish to host, to best align with their infrastructure this can be achieved by customising the code from a fork of the respository and then either deploy to an AWS account using terraform | Medium/High |
+| **[Custom build](https://github.com/Compassion-in-Dying/documentation/blob/main/white-labelling/3_Hosting.md)** | The client can pick and choose the components that they wish to host, customise them at a source code level and then build and host the built docker images however they choose. | High |
 
+More in depth details about the architecture can be found in the [architecture documentation section](https://github.com/Compassion-in-Dying/documentation/blob/main/architecture), however a high level summary is outlined in the following section
 
 ## Technical approach
 
