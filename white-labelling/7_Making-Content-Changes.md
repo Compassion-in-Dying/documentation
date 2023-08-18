@@ -74,6 +74,18 @@ If you look at the image above and the example file content below, you should be
 
 To update the content, the process simply involves changing this file to the desired content.
 
+### Making a change to a single file.
+
+Once you are logged into github, navigate to the [choices_frontend repository](https://github.com/Compassion-in-Dying/choices_frontend). 
+
+Find the file you wish to edit and click the edit icon ![edit-icon](images/Edit-icon.png). This will put the editor into edit mode you can then make the changes you wish to make. 
+
+Once the changes are complete you can click the `commit changes` button and enter a message that represents the change and then click commit changes. At this point the changes will be synchronised and a build will be started.
+
+![Commit changes dialog](images/Commit-changes-dialog.png)
+
+You will notice at the bottom of the dialog that there is a radio button that has two choices. It deafults to `Commit directly to the master branch` however if you need a peer review for your change select the bottom radio button and click commit changes this will create a [Pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) that will allow others to review and comment on the changes. Once you have come to a consensus this PR can be merged.
+
 ### Making changes via the GitHub UI Codespaces. 
 
 Once you are logged into github, navigate to the [choices_frontend repository](https://github.com/Compassion-in-Dying/choices_frontend). 
@@ -102,4 +114,8 @@ To apply the changes enter a commit message in the `message box` (this is requir
 >
 >Would you like to stage all your changes and commit them directly?
 
-Click `yes`. This will commit the changes and the button will change to `sync changes``. At this point you can add more changes by repeating the steps above or you can push `sync changes` which will trigger a build and deployment.
+Click `yes`. This will commit the changes and the button will change to `sync changes` 
+
+![sync changes](images/Sync-changes.png)
+
+At this point you can add more changes by repeating the steps above or you can push `sync changes` which will trigger a build and deployment.
