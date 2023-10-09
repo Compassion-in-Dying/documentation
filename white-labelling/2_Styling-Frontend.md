@@ -21,7 +21,7 @@
 ## Setting up a dev environment
 To be able to visualise the changes you make to the theme there are a few steps that you need to take before you start:
 
-- Read our documentation on [setting up a development environment]()
+- Read our documentation on [setting up a development environment](https://github.com/Compassion-in-Dying/choices_frontend/blob/master/README.md)
 - [Create an `.env.local` ](#create-an-env-file)file in the root of your local repository to store the `env variables` that you will need to connect to other aspects of this service.
 - [Install the packages](#install-the-packages-and-start-the-service) required to start your local development environment
 
