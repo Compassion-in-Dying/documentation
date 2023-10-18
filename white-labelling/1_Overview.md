@@ -1,8 +1,9 @@
 # Overview
 
-**Vision:** To be the gold standard so that other public and private sector organisations can integrate or refer to our service rather than creating their own, allowing as many people as possible the opportunity to create an advance decision and/or advance statement.
+**Vision:** To be the gold standard advance decision and advance statement service so that other public sector, charity and private sector organisations can integrate or refer to our service rather than creating their own, allowing as many people as possible the opportunity to create an advance decision and/or advance statement.
 
-**Goal:** To build a technical architecture that enables white labelling/integration of Compassion in Dying partners and scalability.
+**Goal:** To build a technical architecture that enables other public sector, charity and private sector organisations to white label and integrate our online advance decision and advance statement service.
+
 
 ## What is Open Source white labelling?
 
