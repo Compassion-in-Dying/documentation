@@ -1,16 +1,16 @@
 # Overview
 
-**Vision:** To be the gold standard so that other public and private sector organisations can integrate or refer to our service rather than creating their own, allowing as many citizens as possible the opportunity to record their wishes.
+**Vision:** To be the gold standard so that other public and private sector organisations can integrate or refer to our service rather than creating their own, allowing as many people as possible the opportunity to create an advance decision and/or advance statement.
 
-**Goal:** To build a technical architecture that enables white labelling/integration of CID partners and scalability.
+**Goal:** To build a technical architecture that enables white labelling/integration of Compassion in Dying partners and scalability.
 
 ## What is Open Source white labelling?
 
 A white labelled product is one that organisations can reuse whilst applying their own branding to.
 
-In the context of the CID My Decisions journey, we offer several ways for third parties to achieve this, as they will likely need to integrate CIDs document creation with their own technical set up, and be able to apply their own branding to both the front end and the document that the service produces that captures the users decisions.
+In the context of the Compassion in Dying advance decision and advance statement journey's, we offer several ways for third parties to achieve this, as they will likely need to integrate Compassion in Dying's document creation with their own technical set up, and be able to apply their own branding to both the front end and the document that the service produces that captures the users decisions.
 
-The product has been built using several layers with well defined interfaces, so if the web front end or the user storage system the CID website uses are incompatible with third parties' technical approach, they can also choose to only take on a portion of the solution.
+The product has been built using several layers with well defined interfaces, so if the web front end or the user storage system the Compassion in Dying website uses are incompatible with third parties' technical approach, they can also choose to only take on a portion of the solution.
 
 
 ## The current hosted solution
