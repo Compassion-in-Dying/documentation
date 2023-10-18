@@ -5,7 +5,7 @@
 **Goal:** To build a technical architecture that enables other public sector, charity and private sector organisations to white label and integrate our online advance decision and advance statement service.
 
 
-## What is Open Source white labelling?
+## What is Open Source white labelling? 
 
 A white labelled product is one that organisations can reuse whilst applying their own branding to.
 
