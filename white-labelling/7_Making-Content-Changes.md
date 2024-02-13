@@ -40,7 +40,7 @@ Please provide the details in following for to subscribe.
 
 ## Making content changes to the compassion in dying site
 
-All content displayed in the service is contained within the [public folder of the choices_frontend repository](https://github.com/Compassion-in-Dying/choices_frontend/tree/master/public/content). 
+All content displayed in the service is contained within the [public folder of the choices_frontend repository](https://github.com/Compassion-in-Dying/choices_frontend/tree/master/public/content) - edits should be made in the [releases / production] branch.
 
 Each folder in the path above represents a path in the service. For example 
 
