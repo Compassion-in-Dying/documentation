@@ -42,10 +42,10 @@ Please provide the details in following for to subscribe.
 
 All content displayed in the service is contained within the [public folder of the choices_frontend repository](https://github.com/Compassion-in-Dying/choices_frontend/tree/master/public/content) - edits should be made in the [master] branch. Submit a pull request with the following reviewers below with a request that they merge the pull request into production.
 
-1 Scott Mearis
-2 James Smith
-3 Colin Bull
-4 Chris Norfolk
+1. Scott Mearis
+2. James Smith
+3. Colin Bull
+4. Chris Norfolk
 
 Each folder in the path above represents a path in the service. For example 
 
