@@ -17,12 +17,12 @@ in addtion to the data model also contians a set of views which provide collecti
 |:------|:-----------|
 | DoYouStillNeedAnAccount | Selects users that haven't updated their account in over 8 months and haven't downloaded a form and haven't already recieved a `Do You Still need an account` e-mail. |
 | HelpPrompt | Selects users that have created their account over 8 weeks ago and haven't downloaded a form and haven't already recieved a `Help Prompt` e-mail. |
-| ProvideFeedback | Selects users that have created their account within the last 3 days ago and haven't already recieved a `Provide Feedback` e-mail.|
-| HaveYouSignedYourForm | Selects users that have updated their account last week and haven't already recieved a `Have You Signed Your Form` e-mail.|
+| ProvideFeedback | Selects users that have created their account within the last 3 days, have completed an AD or AS Journey and haven't already recieved a `Provide Feedback` e-mail once.|
+| HaveYouSignedYourForm | Selects users that have updated their account last week, have completed an AD or AS Journey and haven't already recieved a `Have You Signed Your Form` e-mail.|
 | FinalReminder | Selects users that haven't updated their account within the last 8.5 months and have already recieved a `Do you still need an account` e-mail, but not a `Final Reminder` email.|
-| HaveYouSharedWithYourGP | Selects users that have updated their account 2 months ago and haven't already recieved a `Have You Shared with Your GP` e-mail.|
-| TimeToReview | Selects users that haven't updated their account in 2 years and haven't already recieved a `TimeToReview` e-mail.|
-| PrintAndShare | Selects users that have created their account within the last 10 mins and haven't already recieved a `Print and share` e-mail.|
+| HaveYouSharedWithYourGP | Selects users that have updated their account 2 months ago, have completed an AD or AS Journey and haven't already recieved a `Have You Shared with Your GP` e-mail.|
+| TimeToReview | Selects users that haven't updated their account in 2 years, have completed an AD or AS Journey and haven't already recieved a `TimeToReview` e-mail.|
+| PrintAndShare | Selects users that have created their account within the last 10 mins, have completed an AD or AS Journey and haven't already recieved a `Print and share` e-mail.|
 
 ## Data repositories 
 
